@@ -232,75 +232,40 @@ insert into invoice_detail values
 (2, 210654, 'mau-bac', 41990, 2, 0);
 
 ---------------------- Function --------------------- 
--- Thêm tài khoản vào bảng, nếu username đã tồn tại sẽ trả về 1, nếu thêm thành công trả về 0
-CREATE
-OR REPLACE FUNCTION addUser(
-  usr2 varchar(50),  pwd varchar(50),  fullname varchar(50),  phonenumber char(10),  address varchar(200),  gender boolean,  roles int
-) RETURNS integer 
-LANGUAGE plpgsql 
-AS $function$
-begin if (
-  exists (
-    select
-      usr
-    from
-      users
-    where
-      usr = usr2
-  )
-) then return 1;
-
+-- end dong 232
+CREATE FUNCTION addUser(usr2 varchar(50), pwd varchar(50), fullname varchar(50), phonenumber char(10), address varchar(200), gender boolean, roles int) RETURNS int 
+begin if (exists (select usr from users where usr = usr2)) then return 1;
 else
-insert into users values(
-    usr2, pwd, fullname, phonenumber, address, gender, roles
-  );
-
+insert into users values(usr2, pwd, fullname, phonenumber, address, gender, roles);
 return 0;
-
 end if;
-
 end;
 
-$function$;
-
-CREATE
-OR REPLACE FUNCTION addInvoice(
-  usr2 varchar(50),  status2 integer,  branch_id2 integer,  address_receive2 varchar(200),  receiver_name2 varchar(100),  receiver_phone2 char(10),  pay2 integer,  note2 varchar,  modal_id2 integer,  color_id2 varchar,  quantity2 integer,  modal_price2 integer,  discount2 integer
-) RETURNS integer 
-LANGUAGE plpgsql 
-AS $function$
-DECLARE
-   iv_id integer;
+CREATE FUNCTION addInvoice(
+  usr2 varchar(50), status2 int, branch_id2 int, address_receive2 varchar(200), receiver_name2 varchar(100), receiver_phone2 char(10), pay2 int, note2 varchar(1000), modal_id2 int, color_id2 varchar(50), quantity2 int, modal_price2 int, discount2 int
+) RETURNS int 
 begin
+DECLARE
+   iv_id int;
 insert into invoice(
     usr, status, time_invoice, time_receive, branch_id, address_receive, receiver_name, receiver_phone, pay, note
   ) values(usr2, 2, default, default, 0, address_receive2, receiver_name2, receiver_phone2, pay2, note2
   ) RETURNING invoice_id INTO iv_id;
 
 insert into invoice_detail values(iv_id, modal_id2, color_id2, quantity2, modal_price2, discount2);
-
 return iv_id;
-
 end;
 
-$function$;
+-- Function Thêm Bình luận tự động thêm hóa đơn 10/11/2020
 
-------- Test addInvoice -------
----   select addInvoice('admin', 2, 0, 'address test nef', 'Tên người nhận', '0123456789', 1500000, 'Không ghi chú gì thêm', 210654, 'xam', 2, 1000000, 250000)
-
-
---- Function Thêm Bình luận tự động thêm hóa đơn 10/11/2020
-
-CREATE OR REPLACE FUNCTION a2(
-  usr2 varchar(50), modal_id2 integer, time_up varchar(10), content varchar, rate_star integer, time_resolved varchar(10), handler varchar(50) 
+CREATE FUNCTION a2(
+  usr2 varchar(50), modal_id2 int, time_up varchar(10), content varchar(65535), rate_star int, time_resolved varchar(10), handler varchar(50) 
 ) RETURNS void
-LANGUAGE plpgsql 
-AS $function$
-DECLARE
-   price2 integer;
-   iv_id integer;
-   color_id2 varchar(15);
 begin
+DECLARE
+   price2 int;
+   iv_id int;
+   color_id2 varchar(15);
 insert into evaluate values (usr2,modal_id2,
 TO_TIMESTAMP(time_up, 'DD/MM/YYYY'),content,rate_star,
 TO_TIMESTAMP(time_resolved,'DD/MM/YYYY'),handler);
@@ -320,7 +285,6 @@ RETURNING invoice_id INTO iv_id;
 
 insert into invoice_detail values(iv_id, modal_id2, color_id2, 1, price2, 0);
 end;
-$function$;
 
 -- iphone 11 addtest
 insert into version values ('11', '11', 'iphone');
