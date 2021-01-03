@@ -1,0 +1,4 @@
+<div class="banner">
+  <div class="banner__left"><a href="https://www.thegioididong.com/khuyen-mai-soc/a51-a71"><img src="https://drive.google.com/uc?export=download&amp;id=1u661khT4xUI5Ed7_51_18m462eRzevcc" alt=""></a></div>
+  <div class="banner__right"><a href="https://www.thegioididong.com/dtdd/samsung-galaxy-s10-lite"><img src="https://drive.google.com/uc?export=download&amp;id=1oEnxtPFkML2pFL6OElmi48A9ntWxA8Dn" alt=""></a><a href="https://www.thegioididong.com/dtdd/oppo-a31-4gb-128gb"><img src="https://drive.google.com/uc?export=download&amp;id=1pXZOFwfQvl3aeEu_l0H_h-skN09UcRVa" alt=""></a></div>
+</div>
