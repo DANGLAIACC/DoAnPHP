@@ -1,13 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Modal;
 use App\Models\Version;
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    // $modals = Version::all()->getModals;
-    // return view('pages/index') -> with(compact('modals'));
-    return Version::all()->modals;
+    // câu đúng
+    // return Version::with('modals')->find(11)->modals;
+
+    // return Manu::with('versions')->find('iphone')->versions::with('modals')->find(11)->modals;
+
+    return DB::select("SELECT b.*,a.id manu_id2 FROM manu a inner join version b on a.id = b.manu_id");
 });
 Route::get('/detail', function () {
     return view('pages/detail');
