@@ -1,3 +1,10 @@
+<?php
+include '../db_connection.php';
+$conn = OpenCon();
+$result = mysqli_query($conn, "SELECT * FROM modal");
+CloseCon($conn);
+?>
+
 <div class="phone">
   <h1 class="h1">Điện thoại nổi bật nhất</h1>
   <ul class="phone__ul">
@@ -7,15 +14,17 @@
           <div class="price"><strong>10.490.000₫</strong></div><label class="installment">Trả góp 0%</label>
         </div>
         <div class="ratingresult"><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-gstar"></i><span>344 đánh giá</span></div>
-      </a></li>
+      </a></li> 
+      @foreach($result as $item) 
     <li class="phone__ul__li"><a class="large" href="/dtdd/200533/iphone-11-pro-max"><img src="https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-green-600x600.jpg" alt="a">
-        <h3>iPhone 11 Pro Max 64 GB</h3>
-        <div class="price"><strong>33.990.000₫</strong></div>
+        <h3>{{$item->strtext}}</h3>
+        <div class="price"><strong>{{$item->price}}</strong></div>
         <div class="ratingresult"><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-gstar"></i><span>50 đánh giá</span></div>
         <div class="promo noimage">
           <p>Giảm thêm <b>9.000.000₫</b></p>
         </div><label class="installment">Trả góp 0%</label>
       </a></li>
+
     <li class="phone__ul__li"><a class="large" href="/dtdd/210653/iphone-11-pro-max-256gb"><img src="https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-black-600x600.jpg" alt="a">
         <h3>iPhone 11 Pro Max 256 GB</h3>
         <div class="price"><strong>37.990.000₫</strong></div>

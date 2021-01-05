@@ -11,3 +11,6 @@ Route::get('/detail', function () {
 Route::get('/evaluate', function () {
     return view('pages/evaluate');
 });
+Route::get('/testconnect', function () {
+    return view('test/testConnect');
+});
