@@ -8,10 +8,9 @@
         </div>
         <div class="ratingresult"><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-gstar"></i><span>344 đánh giá</span></div>
       </a></li>
-    @foreach($modals as $i)
-
-    <li class="phone__ul__li"><a class="large" href="/dtdd/{{$i->id}}/{{$i->manu_id}}-{{$i->version_id}}{{$i->url !== '' ? (-$i->url):'' }}"><img src="https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-black-600x600.jpg" alt="a">
-        <h3>{{$i->strtext}}</h3>
+    @foreach($result as $i)
+    <li class="phone__ul__li"><a class="large" href="/dtdd/{{$i->id}}/{{$i->manu_id}}-{{$i->version_id}}"><img src='https://cdn.tgdd.vn/Products/Images/42/{{$i->id}}/{{$i->img_small}}-600x600.jpg' alt="a">
+        <h3>{{$i->phone_name}}</h3>
         <div class="price"><strong>{{$i->price}}</strong></div>
         <div class="ratingresult"><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-gstar"></i><span>29 đánh giá</span></div>
         <div class="promo noimage">
