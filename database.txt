@@ -562,7 +562,7 @@ select a2('toshiko', 223497, '04/09/2020', 'Quá tuyệt vời ông mặt trời
 select a2('tu123', 223497, '03/09/2020', 'Cho mình xin đánh giá về 2 dòng điện thoại Oppo reno 4 pro Và samsung note 10lite Mình đang muốn mua mà chưa biết chọn chiếc nào Xin ad đánh giá kỉ về 2 chiếc này giùm', 5, '01/01/1999', '');
 select a2('nvthai', 223497, '01/09/2020', 'Máy tuyệt vời, vượt sự tưởng tượng. Sạc nhanh tầm 30 mấy phút là đầy pin rồi, pin cầm dữ lắm, nhẹ. Nên cầm chơi game, thích cực, máy mượt, loa nghe ấm. Nói chug đáng đồng tiền. Anh em nên mua nhá. Màn hình cong mê cực.', 5, '01/01/1999', '');
 
---- Insert Oppo reno 3
+-- Insert Oppo reno 3
 insert into version values ('reno3', 'Reno 3', 'oppo');
 
 insert into modal values (
@@ -650,7 +650,7 @@ select a2('dqlai',213591,'03/11/2020','Những máy yếu hơn chơi tốc chi�
     select a2('ttlong',216172,'16/05/2020','nhìn hình dáng đẹp đấy. định mua 1 máy hình dáng ddejpj 1 chút nhưng pin phải trâu hơn chút thì ngon "D',4,'01/01/1999','');
    
 
---- Thêm A31
+-- Thêm A31
 insert into version values ('a31', 'A31', 'oppo');
 
 insert into modal values (
@@ -753,7 +753,7 @@ select a2('ltlong', 218662, '06/04/2020', 'MN nói gì vậy sản phẩm rất 
 select a2('nvan', 218662, '04/04/2020', '5 triệu cho 1 sản phẩm màn hình hd,và con chip cùi p35,quả thật không xứng đáng với số tiền bỏ ra', 3, '01/01/1999', '');
 select a2('dqlai', 218662, '03/04/2020', 'Mới mua cách đay mấy ngày thật sự rất tệ. load hình quá chậm và nhảy màn hinh.loa nghe nhạc qua nhỏ', 1, '01/01/1999', '');
 
---- Thêm điện thoại Xiaomi
+-- Thêm điện thoại Xiaomi
 insert into manu values ('xiaomi', 'Xiaomi');
 
 insert into version values ('redmi-9', 'Redmi 9', 'xiaomi');
@@ -846,7 +846,7 @@ select a2('sssbath', 224290, '31/07/2020', 'Sau 2 tuần sử dụng thấy máy
 select a2('toshiko', 224290, '28/07/2020', 'Tôi thấy sản phẩm này quá ngon trong tầm giá. Thứ nhất là về pin pải nói là trâu vãi ra Thứ hai là chip mạnh chiến game khá mượt Thứ ba camera chụp ảnh đẹp cực kì Thứ tư màn hình full HD + vs màn hình lớn cho cảm giác rất thoải mái khi xem phim cững như về mặt hiển thị Cuối cùng là nhận diện khuôn mặt và vân tay rất nhạy mình lỡ tay chạm vào là đt mở ngay lập tức. Về Phần Chê thì mình khá tiếc khi 3gb ram nó ko ổn chỉ thoát game vào nhắn tin xíu vô lại game thì nó load lại từ đầu nên hơi bực nhưng mà nói chung là tốt nên mua nha m.n', 5, '01/01/1999', '');
 select a2('ntloc', 224290, '29/06/2020', 'Nói chung hơn 3triệu mà Xiaomi làm như này là quá tuyệt vời,dành cho những người công nhân', 5, '01/01/1999', '');
 
---- Thêm điện thoại Xiaomi Redmi Note 9 Pro
+-- Thêm điện thoại Xiaomi Redmi Note 9 Pro
 insert into version values ('redmi-note-9-pro', 'Redmi Note 9 Pro', 'xiaomi');
 
 insert into modal values (
@@ -964,7 +964,7 @@ select a2('vdhieu', 221817, '16/06/2020', 'Máy ngon mượt pin châu, nhưng d
 select a2('lmquy', 221817, '07/06/2020', 'Sao máy mình mới mua gắn sim 1 với sim 2 sim 1 bị mất sóng liên tục không không hiểu tại sao nữa.có ai bị giống mình không', 5, '01/01/1999', '');
 select a2('hltmanh', 221817, '24/05/2020', 'Pin quá tốt, máy ít nóng, đa nhiệm mượt. Nhân viên tận tình. Tuyệt vời. Cửa hàng ko có hàng demo, Nhân viên sẵn sàng bóc seal máy mới để khách trải nghiệm. 5 sao xứng đáng. Tại cửa hàng Lê Văn Việt, Q9. Mới trải nghiệm 4h nên chưa đánh giá sâu đc, nói chung là tốt.', 5, '01/01/1999', '');
 
---- Thêm điện thoại Xiaomi Redmi Note 8
+-- Thêm điện thoại Xiaomi Redmi Note 8
 insert into version values ('redmi-note-8', 'Redmi Note 8', 'xiaomi');
 
 insert into modal values (
@@ -1259,9 +1259,9 @@ select a2('dhkhai', 214418, '02/07/2020', 'Đã mua máy. Máy xài dất OK,nh�
 select a2('ttlong', 214418, '02/07/2020', 'Kính cường lực mặt lưng. Cực kỳ dễ vỡ. Hối hận khi mua con này. Apple đã từng thiết kế kính mặt sau thời ip4 nhưng vội vàng thay đổi. Giờ xiaomi lại đi theo thời cổ đại. Chán', 1, '01/01/1999', '');
 select a2('thanhvy', 214418, '02/07/2020', 'Sao máy đang xem phim mà hãy bị lalt mất sóng cứ quay vòng tròn l à.còn lại pin thì OK. máy ko nóng như mọi người nói', 3, '01/01/1999', '');
 
------ Thêm database evaluate để tránh lỗi ngày 11/11/2020
+-- Thêm database evaluate để tránh lỗi ngày 11/11/2020
 
---- iphone 11 pro 512GB
+-- iphone 11 pro 512GB
 select a2('hnthien',210654,'05/11/2019','Mình vừa nhận máy được vào hôm, trải nghiệm máy rất nhạy, nhanh hình thức máy đẹp, camera k chê vào đâu được, tuy nhiên ở cửa hàng mình nhận máy phục vụ chưa được hài lòng lắm.',5,'01/01/1999','');
     select a2('pmthe',210654,'28/10/2020','Máy dùng mượt hơn con IP5 cũ của mình. Nhưng điểm trừ là máy không có bàn phím nên mua cho bà nội bà nội không nhắn tin được',3,'01/01/1999','');
     select a2('httam',210654,'23/09/2020','Mình vừa nhận máy được vào hôm, trải nghiệm máy rất nhạy, nhanh hình thức máy đẹp, camera k chê vào đâu được, tuy nhiên ở cửa hàng mình nhận máy phục vụ chưa được hài lòng lắm.',3,'01/01/1999','');
@@ -1335,7 +1335,7 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('nhdhao',200533,'23/02/2020','Sản phẩm sử dụng pin dưới 20% xem 4g có dấu hiệu trễ mạng. Pin không ổn định sau 1 tuần sử dụng khi update bản 13.3.1',3,'01/01/1999','');
     select a2('ntkduy',200533,'05/02/2020','Thật sự khi sd Iphone xong thì ko thể sd dòng Android được nữa . Từ 7Plus mà đợi lên tới Promax lun . Dân mê chụp ảnh thì đó là 1 lựa chọn tuyệt vời',5,'01/01/1999','');
    
-   --- iPhone Xs 64 GB
+   -- iPhone Xs 64 GB
 
    select a2('httri',190323,'04/11/2020','Iphone xs mình mua đuoc 1tháng nay tụt 4% pin, máy rất nóng như vậy thì có sao không ạ',1,'07/11/2020','Hỗ trợ kỹ thuật');
     select a2('ntphong',190323,'04/11/2020','Iphone XS mình mua được 1 tháng pin còn 98%, chai 2% pin không biết vì sao? Mình không chơi game chỉ lướt FB, youtube là chủ yếu, máy mới mà chai pin nhanh dễ sợ.',1,'04/11/2020','Thegioididong');
@@ -1388,7 +1388,7 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('ttson',190323,'02/11/2019','Mọi thứ đều ok nhưng không hiểu sao người khác gọi đến cho mình thỉnh thoảng cứ bị thuê bao. Chán lắm luôn, phải tắt nguồn đi mở lại mới gọi được',1,'01/01/1999','');
     select a2('ltlong',190323,'22/08/2019','Máy mạnh. Nhưng pin sạc quá lâu trong khi sử dụng khoản 5 6 tiếng là hết pin. Ai như mình không?',5,'01/01/1999','');
    
-   --- iPhone 8 Plus 128 GB
+   -- iPhone 8 Plus 128 GB
 
    select a2('httri',225734,'08/11/2020','ai đã cập nhật ios 14.2 cho 8 plush rồi xin đánh giá với! mình đang dùng ios 13.6',5,'01/01/1999','');
     select a2('lqcuong',225734,'27/10/2020','Mua đc 1 tuần dùng rất cẩn thận mà pin đã chai mất 2% chỉ còn 98%. Chất lượng pin quá kém. K biết sau 1 tháng thì sẽ chai đi bao nhiêu',1,'01/01/1999','');
@@ -1411,7 +1411,7 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('mhvan',225734,'29/08/2020','Hao pin kinh khủng choi pubg đc 2 trận từ 80% tụt còn 23% mak cho màn hình sáng 30%',3,'01/01/1999','');
     select a2('httam',225734,'26/07/2020','Ngoài vấn đề pin hơi yếu thì bù lại mọi thứ đều ok hết từ ngoại hình đến nội thất 😂',4,'01/01/1999','');
    
-   ---- Samsung Galaxy A21s 6GB/64GB
+   -- Samsung Galaxy A21s 6GB/64GB
 
    select a2('ltsong',219314,'06/11/2020','Điện thoại a 21s màn hình quá tệ hình ảnh mờ .bị nhân viên bán hàng điện máy xanh .tư vấn lừa .quá tệ không ưng ý .a21s 64GB QUÁ TỆ THẤT VỌNG CHÀN CHỀ',1,'10/11/2020','Thegioididong.com');
     select a2('thanhvy',219314,'05/11/2020','Sài đc hơn tuần, cảm ứng đơ, lên đmx kiểm tra nói ok, về sài đơ tiếp. Lên đổi nói cứ sài, chắc sài hết thời hạn đổi rồi lại đem đi bảo hành quá.',3,'01/01/1999','');
@@ -1464,7 +1464,7 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('hqbao',219314,'09/07/2020','Sản phẩm này là TỆ nhất trong dòng samsung. Mua bữa 7/7/2020 đến 8/7/2020 . Tự đơ máy hoặc tắt máy cở 10 lần, còn tự động khởi động lại thì liên tục. Nếu đem ra cửa hàng thì bảo hành kiểm định mất bao nhiêu thời gian rùi. Thời buổi công nghệ vắng đt cở 1/2 ngày hui bao nhiêu công việc k giải quyết... đành ngậm đắng nói ngọt',1,'01/01/1999','');
     select a2('lnminh',219314,'07/07/2020','Quá thất vọng Samsung gì má đánh liên quan lag không tưởng, bắt wifi quá tệ, không lẽ mua 2 ngày đem bán chứ.',1,'01/01/1999','');
    
-   ------- Samsung Galaxy A21s 3GB/32GB
+   -- Samsung Galaxy A21s 3GB/32GB
    
    select a2('ltsong',222512,'08/11/2020','Điện thoại mới mua về không kết nối được wifi trong khi máy khác bắt nhanh chóng .sai lầm khi mua',1,'08/11/2020','Thegioididong');
     select a2('dhkhai',222512,'04/11/2020','Máy tốt trong tầm giá, mẫu mã đẹp thời trang. máy phù hợp với nhiều đối tượng như học sinh sinh viên.',5,'01/01/1999','');
@@ -1517,7 +1517,7 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('ltlong',222512,'04/11/2020','Nói thật và chân tình luôn...trừ khi tgdd xóa bình luận này của mình. A21s cảm ứng rất đơ, đa điểm mà cứ như 1 điểm, bấm tỳ mấy cái mới ăn, cảm biến ánh sáng tự động có như không, đo ánh sáng phải gọi iphone bằng cụ, lúc sáng lúc tối liên tục mặc dù ánh sáng môi trường chẳng thay đổi. Loa thì bao rè.',1,'02/11/2020','Hỗ trợ kỹ thuật');
     select a2('ntkanh',222512,'27/10/2020','Bắt sóng wifi quá kém dùng chán nếu có cơ hội mua lại thì tôi sẽ mua mấy khác',1,'01/01/1999','');
    
-   ---- Samsung Galaxy S20 Plus
+   -- Samsung Galaxy S20 Plus
 
    select a2('hltmanh',217936,'09/11/2020','Là một Samfan ráng bỏ tiền mua thử siêu phẩm 1 lần. Ai ngờ kết quả không như bản thân mong đợi. Đt đẹp và rất đẹp ở phần màn hình. Đêan tận bây giờ chưa thấy con nào màn hình đẹp như này. Nhưng về các lỗi vặt như thường ngủ dậy wifi bị tắt, bật lên ko lên đc. Phải tắt nguồn mở lại máy ( Lỗi này đến từ update) Rồi tự nhiên có lúc máy ko làm gì, hoặc tác vụ nhẹ nhàng như chat zalo, mess và ko có apps chạy ngầm thì máy nóng tầm 40 độ. Cảm giác nóng lắm. (Chắc cũng do bản update) Còn bản thân mình thấy về camera trước con này chụp hình nó cà da mặt quá nhiều nên làm cho ảnh nó có phần bị noise nhẹ. Tổng kết các ace mua máy này sài đc trong tầm giá nha. Chẳng qua là samfan nên em mong đợi sam làm đc nhiều hơn thế thôi.',3,'01/01/1999','');
     select a2('mhvan',217936,'04/11/2020','Dạo này máy nhận diện vân tay lúc ăn lúc ko camera chụp chậm quá bình thì tụt nhanh mình ko chơi game chỉ lên mạng lướt Facebook ko mà chưa đc ngày nữa cảm thấy thất vọng về Samsung flaship này',2,'01/01/1999','');
@@ -1571,14 +1571,14 @@ select a2('lqcuong',200533,'10/11/2020','Sản phẩm tuyệt vời. Mượt, pi
     select a2('nthoang',217936,'27/06/2020','Máy quá đẹp, màn hình quá đẹp, pin trâu, cấu hình quá mạnh, dùng phải nói là cực thích. Đổi Note 10 để lấy S20+ là sự lựa chọn sáng suốt.',5,'01/01/1999','');
    
 
-   --- Samsung Galaxy S20
+   -- Samsung Galaxy S20
 
    select a2('bndtrung',217935,'06/03/2020','Mua tặng bx. Gọn nhẹ, màn oled đẹp, cam đỉnh. Khá hài lòng với Samsung và TGDD..',5,'01/01/1999','');
     select a2('nhdhao',217935,'04/07/2020','Mình mơi mua được nửa tháng nhưng không phải ở TGDD, cảm giác tệ, máy tụt pin nhanh ( được cái sạc cũng nhanh) ứng dụng giải trí thì trải nghiệm tốt. Chỉ có 2 điểm chê là pin tuột nhanh và chơi Liên Quân rất tệ, lag hơn cả cái A8 Star cũ nữa mặc dù đã hạ cấu hình xuống thấp nhất, nếu để trung binh là nghỉ chơi luôn đứng hình liên tục',3,'01/01/1999','');
     select a2('lvdai',217935,'05/06/2020','Máy tạm,game lag,giật liên tục,pin tut nhanh,khá thất vọng với siêu phẩm cua nhà samsung.chờ bản cập nhật mới xem ntn',4,'01/01/1999','');
     select a2('dhkhai',217935,'07/03/2020','Rất ngon, camera chụp nét, pin trâu, sạc nhanh, màn hình nét, chip chơi game khá tốt, nói chung là hoàn hảo',5,'01/01/1999','');
    
---- Samsung Galaxy Note 10 Lite
+-- Samsung Galaxy Note 10 Lite
 
 select a2('pmthanh',214909,'08/11/2020','Máy pin 4500 mà cảm thấy pin tuột quá nhanh, ko biết có lỗi ko mong đc giải quyết',2,'08/11/2020','Thegioididong');
     select a2('ttlong',214909,'06/11/2020','Sao pin tụt nhanh quá vậy, có phải lỗi pin ko vậy, mọi thứ khác đều ổn, chụp hình đẹp',2,'01/01/1999','');
@@ -1631,7 +1631,7 @@ select a2('pmthanh',214909,'08/11/2020','Máy pin 4500 mà cảm thấy pin tu�
     select a2('nhhiep',214909,'24/02/2020','Máy khá tốt có điều bị cắt giảm vài tính năng rồi. Pin trâu, sạc nhanh tầm 1h15p đầy (sạc thường nhé). Cắt samsung pay, bút dùng kiểu note 9 nên cũng ko quẩy được như note 10 (lúc đầu mình nghĩ sẽ làm harry với cây bút này nhwung ko đc). Màn hình full hd nên khá ok. nếu 2k thì quá xuất sắc.... Lúc mình mua 11tr990 nên khá bá đạo, còn giờ quay về giá cũ thì các bạn nên suy tính cẩn thận... Vân tay không nhạy lắm, nhưng mình đã khắc phục được 90%',5,'01/01/1999','');
     select a2('ddnhue',214909,'24/02/2020','Đã đổi trả 3 máy note 10 lite Qua trải nghiệm: bắt sóng kém ( so sánh thực tế nhiều loại máy cùng 1 sim 1 thời điểm) lắp 1 sim thì chơi game ok, 2 sim thì lag, kết nối chập chờn Camera trước lỗi trong messenge face: camera zoom tạo ánh hồng Sau 2 tuần trải nghiệm con note 10 thứ 3 và đang chuẩn bị đổi s10 lite',1,'01/01/1999','');
    
-   --- Samsung Galaxy Note 10 Plus
+   -- Samsung Galaxy Note 10 Plus
 
    select a2('ntphong',206176,'10/11/2020','Sao mình kết nối tai nghe với đthoai note 10+ qua blutooth mà xem youtube lại phát âm ở đthoai, AD giúp mình với',4,'11/11/2020','Hỗ trợ kỹ thuật');
     select a2('sssbath',206176,'09/11/2020','Sau khi sử dụng 1 tháng, mọi tác vụ đều trơn tru, chụp ảnh rất sắc nét. Camera trước cũng sắc nét. Chụp thiếu sáng tốt. Chip Exynos nhưng chơi game nặng vẫn bình thường, chứ không phải chip Snapdragon mới chơi game mượt là sai lầm. Không nóng máy, pin ổn định không trâu lắm. Loa ngoài thiết kế phía trên và phía dưới khi nghe nhạc rất đã. Trải nghiệm tốt như vậy mà vẫn có số người chê cho được. Chụp ảnh xấu là do bạn xấu mà thôi đừng nên đổ thừa cho điện thoại kkk.',5,'01/01/1999','');
@@ -1684,7 +1684,7 @@ select a2('pmthanh',214909,'08/11/2020','Máy pin 4500 mà cảm thấy pin tu�
     select a2('ndquang',206176,'19/09/2020','Mới mua hôm nay, dùng thấy cũng được. Nhân viên bán hàng nhiệt tình, vui vẻ. 😂🤣',4,'01/01/1999','');
     select a2('ntloc',206176,'19/09/2020','- Ủa ad ơi, tại sao máy của mình bật được chế độ trình tộ ưu trong phần cài đặt camera vậy.',5,'01/01/1999','');
    
-   --- Vsmart Active 3
+   -- Vsmart Active 3
 
    select a2('nhtuan',217438,'10/11/2020','Sao thấy quảng cáo máy ảnh sau 48 MP mà mình vào cài đặt chỉ chọn được 12MP nhỉ? Treo đầu dê bán thịt chó ah',3,'11/11/2020','Hỗ trợ kỹ thuật');
     select a2('hdhuy',217438,'09/11/2020','Mới mua, dùng rất ok. Lướt mượt, chơi game nặng khá là ok, khuyên mọi người nên mua.',5,'01/01/1999','');
