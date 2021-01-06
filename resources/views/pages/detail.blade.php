@@ -1,6 +1,6 @@
-@extends('layouts.master')
+@extends('layouts.master') 
 
-@section('title', 'Điện thoại iPhone 11 Pro Max 64 GB')
+@section('title', 'Điện thoại '.$item->phoneName)
 
 @section('content')
 <div class="trangChu__cate">
@@ -11,8 +11,10 @@
       <li class="brand"><a href="/dtdd-samsung">iPhone </a></li>
     </ul>
     <div class="phone-detail__row-top d-flex">
-      <h1>Điện thoại iPhone 11 Pro Max 64 GB</h1>
-      <div class="rating-result"><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-ystar"></i><i class="ico-gstar"></i></div>
+      <h1>Điện thoại {{$item->phoneName}}</h1>
+      <div class="rating-result">
+        <?php renderStar($item->average) ?>
+      </div>
     </div>
     <div class="phone-detail__demo">
       @include('partial.detail.left')

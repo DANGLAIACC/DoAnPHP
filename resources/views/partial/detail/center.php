@@ -1,51 +1,47 @@
 <div class="phone-detail__center">
   <div class="version">Bạn đang xem phiên bản: <b>iPhone 11 Pro Max 64 GB</b></div>
   <div class="list-version">
-    <div class="slick-slider slick-initialized" dir="ltr"><button type="button" data-role="none" class="slick-arrow slick-prev" style="display: block;"> Previous</button>
-      <div class="slick-list">
-        <div class="slick-track" style="opacity: 1; transform: translate3d(-567px, 0px, 0px); width: 1512px;">
-          <div data-index="-2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb"><span><i class="ico-opt"></i>256 GB</span><strong>37.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210654/iphone-11-pro-max-512gb"><span><i class="ico-opt"></i>512 GB</span><strong>41.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="0" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 189px;">
-            <div>
-              <div><a aria-current="page" class="item i1 active" href="/dtdd/200533/iphone-11-pro-max"><span><i class="ico-opt"></i>64 GB</span><strong>33.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="1" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb"><span><i class="ico-opt"></i>256 GB</span><strong>37.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="2" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210654/iphone-11-pro-max-512gb"><span><i class="ico-opt"></i>512 GB</span><strong>41.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 189px;">
-            <div>
-              <div><a aria-current="page" class="item i1 active" href="/dtdd/200533/iphone-11-pro-max"><span><i class="ico-opt"></i>64 GB</span><strong>33.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb"><span><i class="ico-opt"></i>256 GB</span><strong>37.990.000₫</strong></a></div>
-            </div>
-          </div>
-          <div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 189px;">
-            <div>
-              <div><a class="item i1" href="/dtdd/210654/iphone-11-pro-max-512gb"><span><i class="ico-opt"></i>512 GB</span><strong>41.990.000₫</strong></a></div>
-            </div>
+    <div id="carouselExampleControls" class="carousel slide slick-slider slick-initialized" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div>
+            <a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb">
+              <span>
+                <i class="ico-opt"></i>256 GB
+              </span>
+              <strong>37.990.000₫</strong>
+            </a>
           </div>
         </div>
-      </div><button type="button" data-role="none" class="slick-arrow slick-next" style="display: block;"> Next</button>
+        <div class="carousel-item">
+          <div>
+            <a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb">
+              <span>
+                <i class="ico-opt"></i>256 GB
+              </span>
+              <strong>37.990.000₫</strong>
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <a class="item i1" href="/dtdd/210653/iphone-11-pro-max-256gb">
+              <span>
+                <i class="ico-opt"></i>256 GB
+              </span>
+              <strong>37.990.000₫</strong>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
     </div>
   </div>
   <div class="price"><strong>33.990.000₫</strong><label class="installment">Trả góp 0%</label></div>
