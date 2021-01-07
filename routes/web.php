@@ -13,13 +13,16 @@ Route::get('/', function () {
 });
 Route::get('/dtdd/{id}/{restURL}', 'App\Http\Controllers\DetailController@index');
 Route::get('/addToCart/{id}', 'App\Http\Controllers\DetailController@addToCart');
+Route::get('/login', 'App\Http\Controllers\UserController@index');
+Route::get('/logout', 'App\Http\Controllers\UserController@logout');
+Route::post('/checkLogin', 'App\Http\Controllers\UserController@checkLogin');
 
 Route::get('/evaluate/{id}/{restURL}', function ($id) {
     return view('pages/evaluate');
 });
 Route::get('/evaluate', function () {
     return view('pages/evaluate');
-});
+}); 
 Route::get('/testconnect', function () {
     return view('test/testConnect');
 });

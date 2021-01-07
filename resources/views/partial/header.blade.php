@@ -20,11 +20,21 @@
         </a>
       </div>
       <div class="header__main__detail__right">
-        <HeaderLogin>
+        <?php
+        $userInfo = session()->get("userInfo");
+        if ($userInfo) {
+          $name = '';
+          foreach ($userInfo as $usr => $item) {
+            $name =  $item['name'];
+            break;
+          }
+          echo '<a href="/logout">Chào '.$name.'</a>';
+        } else
+          echo '<a href="/login">Đăng nhập</a>';
+        ?>
 
-          <a href="/hoi-dap">HỎI ĐÁP</a>
-          <a href="/tin-tuc">24h CÔNG NGHỆ</a>
-          <a href="/game-app">GAME APP</a>
+        <a href='/'>24h CÔNG NGHỆ</a>
+        <a href='/'>GAME APP</a>
       </div>
     </div>
   </div>
