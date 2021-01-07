@@ -1,4 +1,5 @@
-<div class="phone-detail__left"><img src="https://cdn.tgdd.vn/Products/Images/42/200533/iphone-11-pro-max-black-400x460.png" alt="phone name gi do"><span class="phone-detail__span">Xem hình thực tế sản phẩm</span>
+<div class="phone-detail__left"><img src="https://cdn.tgdd.vn/Products/Images/42/{{$item->id}}/{{$item->img_large}}.png" alt="phone name gi do">
+  <span class="phone-detail__span">Xem hình thực tế sản phẩm</span>
   <div class="color-pic">
     <ul class="d-flex justify-content-center">
       <li class="color-pic__li" data-toggle="modal" data-target="#ModalColor">

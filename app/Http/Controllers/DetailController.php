@@ -26,10 +26,36 @@ class DetailController extends Controller
 
     }
     public function addToCart($id){
+        $result = DB::select("select CONCAT(ma.strtext,' ',v.strtext,' ',mo.strtext) phoneName,price,mo.img_small from modal mo inner join version v on mo.version_id = v.id inner join manu ma on v.manu_id = ma.id where mo.id = ".$id);
+        $item = $result[0];
         $cart = session()->get("cart");
         // giỏ hàng null
         if(!$cart){
-            
+            $cart = [
+                $id => [
+                    "name" => $item->phoneName,
+                    "quantity" => 1,
+                    "price" => $item->price,
+                    "photo" => $item->img_small
+                ]
+            ];
+            session()->put('cart', $cart);
+            return redirect()->back()->with('success', 'Thêm sản phẩm thành công nè!');
         }
+        else if (isset($cart[$id])) {
+            $cart[$id]['quantity']++;
+            session()->put('cart', $cart);
+            return redirect()->back()->with('success', 'Thêm sản phẩm thành công nè!');
+        }else{
+            $cart[$id] = [
+                "name" => $item->phoneName,
+                "quantity" => 1,
+                "price" => $item->price,
+                "photo" => $item->img_small
+            ];
+            session()->put('cart', $cart);
+            return redirect()->back()->with('success', 'Thêm sản phẩm thành công nè!');
+        }
+        // return $result;
     }
 }

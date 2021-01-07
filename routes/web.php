@@ -13,6 +13,7 @@ Route::get('/', function () {
 });
 Route::get('/dtdd/{id}/{restURL}', 'App\Http\Controllers\DetailController@index');
 Route::get('/addToCart/{id}', 'App\Http\Controllers\DetailController@addToCart');
+
 Route::get('/evaluate/{id}/{restURL}', function ($id) {
     return view('pages/evaluate');
 });

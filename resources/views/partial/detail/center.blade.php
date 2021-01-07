@@ -1,5 +1,5 @@
 <div class="phone-detail__center">
-  <div class="version">Bạn đang xem phiên bản: <b>iPhone 11 Pro Max 64 GB</b></div>
+  <div class="version">Bạn đang xem phiên bản: <b>{{$item->phoneName}}</b></div>
   <div class="list-version">
     <div id="carouselExampleControls" class="carousel slide slick-slider slick-initialized" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -64,8 +64,8 @@
       <div class="o4"><a class="first" href="a.html"><i class="ico-checkbox"></i><span>Mang thêm điện thoại khác để bạn xem</span></a></div>
     </div>
   </div>
-  <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#cartModal" href="{{ url('addToCart/'.$item->id) }}">
+  <a class="btn-mua-ngay" href="{{ url('addToCart/'.$item->id) }}">
     <b>MUA NGAY</b>
     <span>Giao tận nơi hoặc nhận tại siêu thị</span>
-  </button>
+  </a>
 </div>
