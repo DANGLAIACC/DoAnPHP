@@ -3,25 +3,25 @@
     <h2>Thông số kỹ thuật</h2>
     <ul class="blog_right__parameter">
       <li><span>Màn hình:</span>
-        <div>OLED, 6.5", Super Retina XDR</div>
+        <div>{{$item->screen}}</div>
       </li>
       <li><span>Hệ điều hành:</span>
-        <div>iOS 13</div>
+        <div>{{$item->os}}</div>
       </li>
       <li><span>Camera sau:</span>
-        <div>12 MP</div>
+        <div>{{$item->camera_sau}}</div>
       </li>
       <li><span>Camera trước:</span>
-        <div>3 camera 12 MP</div>
+        <div>{{$item->camera_truoc}}</div>
       </li>
       <li><span>CPU:</span>
         <div>Apple A13 Bionic 6 nhân</div>
       </li>
       <li><span>RAM:</span>
-        <div>4 GB</div>
+        <div>{{$item->ram}}</div>
       </li>
       <li><span>Bộ nhớ trong:</span>
-        <div>64 GB</div>
+        <div>{{$item->rom}}</div>
       </li>
       <li><span>Thẻ nhớ:</span>
         <div></div>
