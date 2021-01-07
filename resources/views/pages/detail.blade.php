@@ -27,6 +27,5 @@
       <div class="clear-float"></div>
     </div>
   </div>
-  @include('partial.cartModal')
 </div>
 @stop

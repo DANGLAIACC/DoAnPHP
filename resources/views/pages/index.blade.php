@@ -8,5 +8,4 @@
   @include('partial.index.filter')
   @include('partial.index.listPhone')
 </div>
-
 @stop

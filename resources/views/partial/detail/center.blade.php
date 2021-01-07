@@ -44,7 +44,14 @@
       </a>
     </div>
   </div>
-  <div class="price"><strong>33.990.000₫</strong><label class="installment">Trả góp 0%</label></div>
+  <div class="price">
+    <strong>
+      <?php
+      echo formatMoney($item->price)
+      ?>
+    </strong>
+    <label class="installment">Trả góp 0%</label>
+  </div>
   <div class="promotion"><strong>Khuyến mãi</strong>
     <div class="promotion__info"><span>Trả góp 0% thẻ tín dụng<a href="https://www.thegioididong.com/tin-tuc/samsung-galaxy-voi-uu-dai-tra-gop-qua-the-tin-dung-1246400">Xem chi tiết</a></span><span>Thu cũ đổi mới - Lên đời Samsung sành điệu (Áp dụng đặt và nhận hàng từ 10 - 31/8)<a href="https://www.thegioididong.com/thu-cu-doi-moi">Xem chi tiết</a></span><span>Tặng 2 suất mua Đồng hồ thời trang giảm 40% (không áp dụng thêm khuyến mãi khác)<a href="https://www.thegioididong.com/tin-tuc/san-dong-ho-deo-tay-thoi-thuong-gia-re-het-hon-1266764">Xem chi tiết</a></span><span>Phụ kiện mua kèm giảm 20% (không áp dụng phụ kiện hãng, không áp dụng đồng thời KM khác)</span></div>
     <hr>
@@ -56,5 +63,9 @@
       </div>
       <div class="o4"><a class="first" href="a.html"><i class="ico-checkbox"></i><span>Mang thêm điện thoại khác để bạn xem</span></a></div>
     </div>
-  </div><button class="btn-mua-ngay" data-toggle="modal" data-target="#cartModal"><b>MUA NGAY</b><span>Giao tận nơi hoặc nhận tại siêu thị</span></button>
+  </div>
+  <button class="btn-mua-ngay" data-bs-toggle="modal" data-bs-target="#cartModal" href="{{ url('addToCart/'.$item->id) }}">
+    <b>MUA NGAY</b>
+    <span>Giao tận nơi hoặc nhận tại siêu thị</span>
+  </button>
 </div>

@@ -55,7 +55,7 @@ for ($i = 5; $i > 0; $i--) {
           </div>
         </div>
         @endforeach
-      </div><a class="evaluate__all" href="/dtdd/200533/iphone-11-pro-max/danh-gia">Xem tất cả đánh giá</a>
+      </div><a class="evaluate__all" href="/evaluate/200533/iphone-11-pro-max">Xem tất cả đánh giá</a>
     </div>
   </div>
 </div>

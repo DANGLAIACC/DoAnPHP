@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Facade\FlareClient\View;
 use Illuminate\Support\Facades\DB;
 
 class DetailController extends Controller
@@ -25,5 +24,12 @@ class DetailController extends Controller
         // return $top3Evaluate;
         return view('pages.detail', compact(['item', 'top3Evaluate','rates']));
 
+    }
+    public function addToCart($id){
+        $cart = session()->get("cart");
+        // giỏ hàng null
+        if(!$cart){
+            
+        }
     }
 }

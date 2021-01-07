@@ -11,7 +11,7 @@
     </form>
     <div class="header__main__detail">
       <div class="header__main__detail__left">
-        <a href="/" class="header__main__detail__gio-hang" data-toggle="modal" data-target="#cartModal">
+        <a href='\' class="header__main__detail__gio-hang" data-bs-toggle="modal" data-bs-target="#cartModal">
           <i class="ico-card"></i>
           <span>Giỏ hàng</span>
         </a>
