@@ -3,7 +3,7 @@
 
 ### Đề tài: <b>Tìm hiểu Controller và middleware trong Laravel, xây dựng website bán điện thoại di động</b>
 
-## Demo tại: 
+## Demo tại: https://youtu.be/E_GKcUMG-rI
 
 ## Công nghệ sử dụng
 - XAMPP 3.2.4
@@ -11,7 +11,7 @@
 - mysqld  Ver 10.4.14
 
 ## Các chức năng của chương trình:
-- Đăng nhập
-- Xem danh sách quán ăn.
-- Tìm kiếm quán ăn.
-- Xem đánh giá quán ăn.
+- Đăng nhập/Đăng xuất.
+- Xem danh sách điện thoại.
+- Xem chi tiết điện thoại.
+- Thêm sản phẩm vào giỏ hàng.
