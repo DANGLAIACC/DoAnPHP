@@ -4,6 +4,7 @@
 ### Đề tài: <b>Tìm hiểu Controller và middleware trong Laravel, xây dựng website bán điện thoại di động</b>
 
 ## Demo tại: https://youtu.be/E_GKcUMG-rI
+## senimar: https://youtu.be/PCBmpHkwdwg
 
 ## Công nghệ sử dụng
 - XAMPP 3.2.4
